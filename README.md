@@ -1,9 +1,10 @@
-# EXPERIMENT--02-Interfacing-a-Digital-output-LED-to-LPC2148-ARM-7-Microcontroller-
-## Interfacing a Digital output (LED) to LPC2148 ARM 7 Microcontroller 
+# EXPERIMENT--02-Interfacing-a-Digital-output-LED-to-LPC2148-ARM-7-Microcontroller 
 
-## Aim: To Interface a Digital output (LED) to LPC2148 ARM 7 and write a blink code 
-## Components required: Proteus ISIS professional suite, Kiel μ vision 5 Development environment 
-## Theory 
+## Aim: 
+To Interface a Digital output (LED) to LPC2148 ARM 7 and write a blink code 
+## Components required: 
+Proteus ISIS professional suite, Kiel μ vision 5 Development environment 
+## Theory :
 The full form of an ARM is an advanced reduced instruction set computer (RISC) machine, and it is a 32-bit processor architecture expanded by ARM holdings. The applications of an ARM processor include several microcontrollers as well as processors. The architecture of an ARM processor was licensed by many corporations for designing ARM processor-based SoC products and CPUs. This allows the corporations to manufacture their products using ARM architecture. Likewise, all main semiconductor companies will make ARM-based SOCs such as Samsung, Atmel, TI etc.
 
 What is an ARM7 Processor?
@@ -51,73 +52,99 @@ Select the device database. Default is Software Packs. You can have various loca
 
 For creating the simulation environment in Proteus suite 
 Starting New Design
-Step 1: Open ISIS software and select New design in  File menu
+### Step 1:
+Open ISIS software and select New design in  File menu
+#### Figure -02 Proteus File Menu
  ![image](https://user-images.githubusercontent.com/36288975/189275283-128a9e18-c1b4-4725-90fc-086361f0b0f1.png)
-
-Figure -02 Proteus File Menu
-
- Step 2: A dialogue box appears to save the current design. However, we are creating a new design file so you can click Yes or No depending on the content of the present file. Then a Pop-Up appears asking to select the template. It is similar to selecting the paper size while printing. For now select default or according to the layout size of the circuit.
- ![image](https://user-images.githubusercontent.com/36288975/189275292-833e565c-6583-4667-8aff-376bd8028ee3.png)
-
-  Figure -03 Proteus Default Template Select
- 
-Step 3:An untitled design sheet will be opened, save it according to your wish,it is better to create a new folder for every layout as it generates other files supporting your design. However,it is not mandatory.
-
+ ### Step 2:
+ A dialogue box appears to save the current design. However, we are creating a new design file so you can click Yes or No depending on the content of the present file. Then a Pop-Up appears asking to select the template. It is similar to selecting the paper size while printing. For now select default or according to the layout size of the circuit.
+ #### Figure -03 Proteus Default Template Select
+ ![image](https://user-images.githubusercontent.com/36288975/189275292-833e565c-6583-4667-8aff-376bd8028ee3.png) 
+### Step 3:
+An untitled design sheet will be opened, save it according to your wish,it is better to create a new folder for every layout as it generates other files supporting your design. However,it is not mandatory.
+ #### Figure -04 Proteus Design Sheet
 ![image](https://user-images.githubusercontent.com/36288975/189275301-c4a11767-fe44-4bc0-8d8a-89022825f3cd.png)
-
-  Figure -04 Proteus Design Sheet
- 
-Step 4:To Select components, Click on the component mode button.
+### Step 4:
+To Select components, Click on the component mode button.
+#### Figure -05 Component Mode
  ![image](https://user-images.githubusercontent.com/36288975/189275318-5c6e5521-cf09-441d-912f-7bcebdcb8189.png)
-
-Figure -05 Component Mode
-Step 5:Click On Pick from Libraries. It shows the categories of components available and a search option to enter the part name.
- 
+### Step 5:
+Click On Pick from Libraries. It shows the categories of components available and a search option to enter the part name.
+####  Figure -06 Pick from Libraries
  ![image](https://user-images.githubusercontent.com/36288975/189275326-3eea00d3-6ea3-40e6-a5b2-97d80db0f1aa.png)
-
-  Figure -06 Pick from Libraries
-
-Step 6: Select the components from categories or type the part name in Keywords text box.
+### Step 6:
+Select the components from categories or type the part name in Keywords text box.
  Place all the required components and route the wires i.e, make connections.
 Either selection mode above the component mode or component mode allows to connect through wires. Left click from one terminal to other to make connection. Double right-click on the connected wire or the component to remove connection or the component respectively.
- 
+ ####  Figure -07 Component Properties Selection
  ![image](https://user-images.githubusercontent.com/36288975/189275342-2365f361-05d0-4fc0-8b44-3934b8b03ea7.png)
 
- Figure -07 Component Properties Selection
 Double click on the component to edit the properties of the components and click on Ok.
-Step 8: Select ARM microcontroller form the library – pick part 
+### Step 8:
+Select ARM microcontroller form the library – pick part 
+#### Figure -08 LPC2138/48 selection
+
 ![image](https://user-images.githubusercontent.com/36288975/189275370-90534a4c-8524-4931-9978-291200f0fd2e.png)
 
- 
-Figure -08 LPC2138/48 selection
-Step 7:
-
+### Step 7:
 After making necessary connections click on debug from 
+####  Figure -09 Keywords Textbox
 ![image](https://user-images.githubusercontent.com/36288975/189275403-c1506ad6-7795-40f9-b878-9b83e12263b9.png)
-
- Figure -09 Keywords Textbox
 Example shows selection of push button. Select the components accordingly.
  
- Step 8: The selected components will appear in the devices list. Select the component and place it in the design sheet by left-click., post which select all the associated components as shown in the circuit diagram below 
-
+ ### Step 8:
+ The selected components will appear in the devices list. Select the component and place it in the design sheet by left-click., post which select all the associated components as shown in the circuit diagram below 
+#### Figure -10 Circuit diagram of LED interface on port -0
  ![image](https://user-images.githubusercontent.com/36288975/189275426-09eb6d0d-aab0-4d8a-8ef8-31288fbfe2a1.png)
 ![image](https://user-images.githubusercontent.com/36288975/189275464-1074d010-f106-4615-9959-68ed1a271502.png)
 
-Figure -10 Circuit diagram of LED interface on port -0
 
+#### Figure -11 Hex file for simulation 
 
  ![image](https://user-images.githubusercontent.com/36288975/189275481-7466fd00-fe0b-4781-93b8-39b551cdcc36.png)
 
-Figure -11 Hex file for simulation 
 
-Step 9: Select the hex file from the Kiel program folder and import the program in to the microcontroller as shown in figure 11 ,  debug and if no errors in connections are found, run the VSM simulation to view the output.
+
+### Step 9: 
+Select the hex file from the Kiel program folder and import the program in to the microcontroller as shown in figure 11 ,  debug and if no errors in connections are found, run the VSM simulation to view the output.
 
 
 ## Kiel - Program for LED blinking ON  and  OFF (blinking)
+```c
+Name: Silambarsan K
+Roll No: 212221230101
 
-## Output screen shots :
+
+#include <LPC214x.h>   // define LPC2148 Header file
+#define led (1<<2)     // led macro for pin 2 of port0
+#define sw (1<<10)     // sw macro for pin 10 of port0
+int main(void)
+{
+	unsigned int x;
+	IO0DIR|=(~sw);   // configure P1.24 - P1.31 as input
+	IO0DIR|=led;     // configure P1.16 - P1.23 as output
+	while(1)
+	{
+		x = IOPIN0 & sw;   //save status of sw in variable x
+		if(x==sw)          // if switch open
+		{
+			IOCLR0|=led; // LED off
+		}
+		else               // if switch close
+		{
+			IOSET0 = led;  // LED on
+		}
+	}
+}
+```
+
+## Output :
+![img](https://user-images.githubusercontent.com/94525786/196034045-9a30b64e-6680-4a16-843b-51328bb1009d.png)
+
+![ex-0202](https://user-images.githubusercontent.com/94525786/196034062-3b7a95d3-8b43-4de6-92f4-96e97eb74e5d.png)
+
  
 ## Result :
-Interfacing a digital output with ARM microcontroller is executed 
+Interfacing a digital output with ARM microcontroller is executed.
 
 
