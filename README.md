@@ -139,8 +139,9 @@ int main(void)
 ```
 
 ## Output :
+### LED OFF STATE:
 ![img](https://user-images.githubusercontent.com/94525786/196034045-9a30b64e-6680-4a16-843b-51328bb1009d.png)
-
+### LED ON STATE:
 ![ex-0202](https://user-images.githubusercontent.com/94525786/196034062-3b7a95d3-8b43-4de6-92f4-96e97eb74e5d.png)
 
  
